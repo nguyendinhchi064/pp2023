@@ -27,7 +27,7 @@ for i in range(nb_course):
         point.append(score)
 
 for i in range(nb_course):
-    print("\n"+id_course[i],name_course[i]+":")
+    print("\t"+id_course[i],name_course[i]+":")
     for j in range(nb_student):
-        print("  ||  "+id_student[j],name_student[j],DoB_student[j]+"  ||  "+str(point[v]))
+        print("  ||  "+id_student[j],name_student[j],DoB_student[j]+"  ||  "+str(point[v])+" || ")
         v+=1
