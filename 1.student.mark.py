@@ -23,11 +23,11 @@ point = []
 v=0
 for i in range(nb_course):
     for j in range(nb_student):
-        score = float(input(name_course[nb_course]+" mark of "+ name_student[nb_student]+":"))
+        score = float(input(name_course[i]+" mark of "+ name_student[j]+":"))
         point.append(score)
 
-for i in range(nb_student):
-    print("\t"+id_course[i],name_course[i]+":")
-    for j in range(nb_course):
-        print("  ||  "+id_student[j],name_student[j],DoB_student[j]+"  ||  "+str(+point(v)))
+for i in range(nb_course):
+    print("\n"+id_course[i],name_course[i]+":")
+    for j in range(nb_student):
+        print("  ||  "+id_student[j],name_student[j],DoB_student[j]+"  ||  "+str(point[v]))
         v+=1
